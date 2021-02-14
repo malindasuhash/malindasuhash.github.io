@@ -36,9 +36,9 @@
         <ul class="post-categories">
         {%- for tag in site.plainwhite.all_categories -%}
           <li>{{ tag }}</li>
-      {%- endfor -%}
-    </ul>
-    {%- endif -%}
+        {%- endfor -%}
+        </ul>
+      {%- endif -%}
       {% capture footer %}
       {%- if site.plainwhite.social_links != '' -%}
       <ul class="social about-footer {{condensed_class}}">
