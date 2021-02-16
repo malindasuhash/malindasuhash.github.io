@@ -5,8 +5,6 @@ date:   2020-01-01 21:03:36 +0530
 categories: Azure
 ---
 
-# Azure Resource Groups - Basics 
-
 The Azure Resource Manager (ARM) is the core building block in the modern Microsoft Azure platform and Resource Groups plays a critical part of it. 
 
 A Resource Group is a multi-faceted construct. It can be thought of as a container for a collection of resources, scope/permission boundary and influences the location of resources. 
