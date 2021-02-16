@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "Azure Resource Manager - Basics"
+date:   2020-01-01 21:03:36 +0530
+categories: Azure
+---
+
 # Azure Resource Groups - Basics 
 
 The Azure Resource Manager (ARM) is the core building block in the modern Microsoft Azure platform and Resource Groups plays a critical part of it. 
