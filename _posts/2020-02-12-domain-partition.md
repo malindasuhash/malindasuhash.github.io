@@ -28,7 +28,7 @@ The Anti-corruption layer is a well-known “adapter” style pattern that allow
 
 The Anti-corruption layer pattern is a quite a versatile and it can be adapted as an architectural or development design pattern. 
 
-![anti-c](/assets/Simple-anti-c.png)
+![anti-c](/assets/anti-c/Simple-anti-c.png)
 
 Few examples use cases are: 
 
