@@ -22,7 +22,7 @@ plainwhite:
   all_categories: 
     - Azure 
     - .NET 
-    - Python
+    - Design
   condensed_mobile:
     #- home
     - page
