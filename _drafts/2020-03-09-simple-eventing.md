@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Integrating razorpay into your webapp"
+title:  "Simple messaging"
 date:   2020-03-09 10:03:36 +0000
 categories: Messaging
 ---
