@@ -28,9 +28,11 @@ The **time-to-market** is so important these days and designed are expected cons
 The **technology** is an interesting factor to consider early on. I think there is no harm considering the existing technology stack as the cost could increase if plethora of technologies are introduced.
 
 ## Solution options
-Once the motivations are laid bare, the phase is to consider solution options. This is the rubber-meet-the-road moment. 
+Once the motivations are laid bare, the phase is to consider solution options. This is the **rubber-meet-the-road** moment where you'll make yourself available to the client by using the theory, pratice and experience. 
 
-In my case I had three bullet points each discribing an option in one sentence. Instead of this format, I wish I had added advantages and disadvangaes for each, perhaps a table as following.
+![rubber](/assets/presentation/road.jpg)
+
+In my case, I had three bullet points each discribing an option in one sentence. Instead of this format, I wish I had added advantages and disadvangaes for each, perhaps a table as following.
 
 Option|Performance|Security|Complexity
 ------|-----------|--------|----------
