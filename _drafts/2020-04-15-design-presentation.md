@@ -53,5 +53,18 @@ I deliberately did not include any guidance on solution build. On hindsight, it 
 Since I did not present this information, it is hard to know what the reaction would have been. 
 
 ## Prototype
-Picture tells a thousand words! There is absolutely no subsitute. A simple prototype view of the app or web-site would really hit the points home. I wish I had included few. 
+Picture tells a **thousand words**! There is absolutely no subsitute. A simple prototype view of the app or web-site would really hit the points home. I wish I had included few. 
+
+## Next steps
+No design presentation is complete without next actions. This is probably the worst mistake I made. I did not include one, instead I mentioned the next steps verbally. As a client I would love to hear what to expect next. 
+
+## Takeaways
+* Plan in advance.
+* MVP! - This is very important.
+* Clear diagram and make sure to add **Keys**.
+* Cost - Use the money well!
+* Include security and technology - It's OK to include.
+* Mockups will be extremly useful.
+* Next actions - Setup a workshop maybe.
+* Last but not least - Make sure you have a good diagrammning tool. I use Lucid charts. 
 
