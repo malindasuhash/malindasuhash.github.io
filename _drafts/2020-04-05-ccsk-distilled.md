@@ -106,3 +106,18 @@ determine how an organisation is run.
 - Periodically review audits and assessments (scheduled or automated)
 - Residual risk - what is left after managing risk maybe able to manage through controls (e.g encryption).Options are above (transfer/accept/avoid). 
 - Risk transfer is enabled by insurance.
+
+# 3. Legal, contracts and electronic discovery
+- Legal frameworks
+  - Data controller - has the relationship with the user
+  - Data processor - proces data behalf of the data controller
+  - Data controller must ensure the data processor has adequate controls and safe guards. 
+  - What legal frameworks used depends on each country.
+- Security of personal data is essential for individual's privacy.
+- Data importer and exporter may need to sign a contract to ensure maintainance of privacy rights of users. 
+- Privacy laws
+  - Australia (Privacy Act, Consumer Law)- Require notification in case of a breach that may cause serious harm. 
+  - China - Cyber Security law
+  - Japan - APPI limits transfer of personal data to third-parties. 
+  - Russia - Data localisation law - require storage of citizen information within its borders. 
+  - EU/EEA - GDPR applies when processing data of EU citizens. Establishment of controller or processor in EU/EEA. Data subjects given explicit concent to process data. Applies when data of EU/EEA citizens are processed anywhere. Privacy by design/default for applications. Data breach must be reported with 72 hours.
