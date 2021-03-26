@@ -13,11 +13,11 @@ This goal of this post is to summarise the key highlights
 * There are number of definitions for Cloud Computing. NIST defines it as "Cloud computing is a model for enabling ubiquitous, convenient, **on-demand network** access to a **shared pool** of configurable computing resources (e.g., networks, servers, storage, applications, and services) that can be **rapidly provisioned** and released with minimal management effort or service provider interaction".
 
 * Essential characteristics (NIST)
- - Broad Network access 
- - Rapid Elasticity
- - Measured service (metered)
- - On-demand (self-service)
- - Multitenancy (included in ISO)
+ -Broad Network access 
+ -Rapid Elasticity
+ -Measured service (metered)
+ -On-demand (self-service)
+ -Multitenancy (included in ISO)
 
 * Service Models (Sometimes called "SPI")
 - Software as a Service (SAAS) (Applications)
