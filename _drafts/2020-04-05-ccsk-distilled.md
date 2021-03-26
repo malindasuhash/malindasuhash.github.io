@@ -36,7 +36,7 @@ This goal of this post is to summarise the key knowledge expected by CCSK if you
 - Infostructure - Data and information. (Protection by Data Security)
 - Applistructure - Applications deployed and underlying application services used to build them (e.g. message queues, AI, notification systems) (Protection by Application Security)
 
-### Key elements
+### Key notes
 - Techniques used to create cloud are abstraction and orchestration. Cloud abstract the resources from the underlying phyiscal infrastructure to create pools and use orchestration to carve out and deliver set of resources from pools.  
 - Note that traditional virtualisation abstracts the underlying resources but lacks orchestration to pool them. It is a manual process but in cloud it is automated. 
 - The **cloud management plane** offers a web interface to manage cloud resources (e.g. launch instances, configure virtual networks)
@@ -49,3 +49,60 @@ This goal of this post is to summarise the key knowledge expected by CCSK if you
 - **Cloud Security Models** are tools to help guide security decisions.
 - **Reference architectures** are templates for implementin cloud security.
 - The first step of implementing a cloud security process model is to identify necessary requirements. 
+
+# 2. Governance and Enterprise risk management
+
+### Governance
+- Policy
+- Process
+- internal controls 
+determine how an organisation is run.
+
+### Enterprise risk management
+- Management of overall risk of the organisation that is aligned to the governance and risk tolerance. 
+- Information risk management - Management of risk of information (includes IT). Information is one of the assets of the organisation.
+- Information security - Tools and practices to manage risk to information.
+- Primary role of Information security is to **provide processes** and **controls** to protect electronic information and the systems use to access it. 
+- Governance --> Enterprise risk management --> Information risk management --> Information security
+- Risk tolerance is the amount of risk that the leadership and stakeholders of an organisation are willing to accept. 
+- Moving to the cloud does not change the risk tolerance but changes how risk is managed. 
+
+### Key notes
+- Cloud computing impacts goverance as it introduce a third-party into the process.
+- Remember: **an organisation can never outsource the responsibility of governance**.
+- Responsibilities and mechanisms for governance are defined in contract with the provider. 
+- Customer has to address any governance gap is there is an area that is not covered in the contract. Customer is expected to adjust their own processes to close this gap.
+
+### Tools for governance
+- Contract - Primary tool/relationship document between customer and provider. 
+- Supplier assessments - Performed by customer using available information. (manual research, third-party attestations - **legal statement used to communicate result of an assessment or audit**).
+- Compliance reporting - Providers internal and external compliance assessments.
+- CSA STAR Registry is an assurance program and documentation registry for cloud provider assessments based on CCM and CAIQ.
+
+### Service and deployment model
+- SAAS require the most need for a negotiated contract.
+- PAAS Likelihood of a fully negotiated contract is low.
+- IAAS is closer to traditional data centre and existing governance and risj management activities are transferable. 
+- In public cloud, ability to govern the operation is very low because provider is responsible for it. 
+- There is no room adjusted contracts as everything runs on one set of resources. 
+
+### Cloud risk management trade-offs
+- Less physical control 
+- Greater reliance on contracts. audits and assessments
+- Management of relationship
+- Reduced need to manage risk as provider will manage some under shared responsibility model.
+
+### Tenents of risk management
+- Manage
+- Transfer
+- Accept
+- Avoid
+- Cloud risk management requires 
+  1. Acquire documentation
+  2. Review provider security program
+  3. Review legal, regulatory and contractual and jurisdictional requirements
+  4. Evaludate contracted services
+  5. Evaluate provider (finance, stability etc)
+- Periodically review audits and assessments (scheduled or automated)
+- Residual risk - what is left after managing risk maybe able to manage through controls (e.g encryption).Options are above (transfer/accept/avoid). 
+- Risk transfer is enabled by insurance.
