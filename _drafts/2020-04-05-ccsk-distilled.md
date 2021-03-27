@@ -111,6 +111,7 @@ determine how an organisation is run.
 - Legal frameworks
   - Data controller - has the relationship with the user
   - Data processor - proces data behalf of the data controller
+  - Data owner - Also the data subject, the customer who owns the data (you and me)
   - Data controller must ensure the data processor has adequate controls and safe guards. 
   - What legal frameworks used depends on each country.
 - Security of personal data is essential for individual's privacy.
@@ -121,3 +122,38 @@ determine how an organisation is run.
   - Japan - APPI limits transfer of personal data to third-parties. 
   - Russia - Data localisation law - require storage of citizen information within its borders. 
   - EU/EEA - GDPR applies when processing data of EU citizens. Establishment of controller or processor in EU/EEA. Data subjects given explicit concent to process data. Applies when data of EU/EEA citizens are processed anywhere. Privacy by design/default for applications. Data breach must be reported with 72 hours.
+- NIS directive - applies **Digital Service Providers (DSP)** to protection of networks and information systems in EU/EEA. Security requirements for essential services. Appies to providers who offer services in EU/EEA who are based outside EEA is in scope.
+- Data custodian - Similar to data controller must ensure security and protection of personal data especially when transferring to a third-party.
+- Customer is expected to have a written contract with the provider with resonable security measures. 
+- The FTC and State attorneys general in USA are able to conduct enforcement actions against companies whose privacy practices are inconsistent with claims made in public disclosures. 
+- Data must be used only for the purposes for which it was collected.
+- Always look for adequate protection when data is being transferred across borders. 
+- Periodic monitoring, testin and evaluation of cloud services are required as they evolve and need to ensure the control efficacy.
+- Note that third-party audits and attestations are used by customers to build their own compliance systems. Therefore it is important to understand the scope of these audits and attestation to ensure its applicability.  
+- Due diligence may include
+  - Quality of service
+  - Stability of service
+  - Completeness of service
+  - Applicable service level (e.g. 99.5%)
+  - Security disclosures
+  - Price of service
+  - Proof of compliance with applicable legal requirements
+  - Availability of certain level of support
+  - Responsiveness of customer service
+  - Speed of network 
+  - Location of data centres
+  - Also interview customers to obtain insight
+  - Review reports of litigation
+  - Online searches to evaluate vendor reputation
+
+### Electronic discovery
+- The process which an opposing party obtain private documents for use in litigation. Admissible in court. Admissible evidence means applicable and relevant. 
+- Hosting data in a cloud platform does not oblivate the obligation to produce information. Therefore important to understand what data is not available to the client from the outset. 
+- If the application platform or environment is at fault or relevant to the investigation, then the request has to be raised with the provider itself. 
+- Some e-discovery tools used in traditional infrastructure may not be usable/applicable in the cloud. This means extra time and monitory impact expected to be considered and perhaps included in the contract. 
+- Litigation hold - Using resonable steps to prevent the distruction of information in possesion that maybe used for a pending litigation. 
+- Data may need to be retained for legal reasons which means storage and cost must be considered. (Large amount of data for an extended period).
+- Scope of preservation - Party may need to retain data that is resonable for the litigation but client may over-preserve if granular preservation is not supported.
+- Data collection
+  - Data collection can be hard as customer may not have the required access.
+  - Access and bandwidth costs
