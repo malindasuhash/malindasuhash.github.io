@@ -163,3 +163,36 @@ determine how an organisation is run.
   - Storing data in the cloud not does prevent its being used as evidence. Should not be considered more or less admissible or credible merely because they were created or stored in the cloud.
   - Discovery by design - data in the cloud is available during e-discovery. 
   - [Sedona Conference](https://thesedonaconference.org/) - Recommendations for handlin ESI. (non-profit organisation)
+ 
+ # 4. Compliance and audit management
+ - Compliance audit and assurance should be continous.
+ ### Goverance, Risk and Compliance (GRC)
+  - Compliance managenent is a tool of governance, it is how an organisation proves it is meeting internal and external obligations. 
+  - Information security is coupled with compliance.
+  - Customer is ultimately responsible for their compliance.
+  - Customer has to depend on third-party attestations of provider to understand their compliance and alignment/gaps.
+  - Pass-through audit - form of compliance inheritance. Providers services including infrastructure has gone through an audit to a compliance standard. Provider maintains their compliance.
+  - Customer must understand where their data and services are.
+  - Note that not all services are audits aganist all compliance regimes, customer must make sure they use the vetted services to build their compliant solution.
+
+### Audits
+- Audit and assessments are mechanisms to document compliance with internal and external requirements. It is expected to include compliance determination (what is the outcome). 
+- Audit management include management of all activities related to audits and assessmenets.
+  - Determines requirements
+  - Scope
+  - Scheduling
+  - Responsibilities
+- Customer may need to sign NDA before gainining access to attestations from providers.
+- Attestations and certifications are point in time activities. 
+- Audit artifacts are:
+  - Logs
+  - Documentation
+  - Materials needed for audits and compliance
+  - System configuration details
+  - Activity reporting
+  - Change managemnent details
+
+- Attestation is a legal statement from a third-party which describe their statement of audit findings. 
+- CSA CCM can be used to maintain requirements and current status.
+
+# Information governance
