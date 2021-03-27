@@ -63,6 +63,7 @@ determine how an organisation is run.
 - Information risk management - Management of risk of information (includes IT). Information is one of the assets of the organisation.
 - Information security - Tools and practices to manage risk to information.
 - Primary role of Information security is to **provide processes** and **controls** to protect electronic information and the systems use to access it. 
+- Primary goal of Information security is to protect the fundamental data that power systems and applications. 
 - Governance --> Enterprise risk management --> Information risk management --> Information security
 - Risk tolerance is the amount of risk that the leadership and stakeholders of an organisation are willing to accept. 
 - Moving to the cloud does not change the risk tolerance but changes how risk is managed. 
@@ -195,4 +196,14 @@ determine how an organisation is run.
 - Attestation is a legal statement from a third-party which describe their statement of audit findings. 
 - CSA CCM can be used to maintain requirements and current status.
 
-# Information governance
+# 5. Information governance
+- Information is data with value.
+- Ensures that data and information complies with organisational policies, standards and strategy including regulatory, contractual and business objectives. 
+- Determines how data is handled in accordance with goals and requirements. 
+- By hosting data in cloud, a third-party is introduced to the governance model. 
+
+### Things that impact 
+- Multitenancy - Data is stored in shared infrastructure.
+- Shared reponsibility model - customer and provider responsibilities
+  - Data ownership - who owns the data. Defines rules how data is managed.
+  - Custodianship - who is managin the data. Implements the rules.
