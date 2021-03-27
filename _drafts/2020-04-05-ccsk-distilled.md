@@ -154,6 +154,12 @@ determine how an organisation is run.
 - Litigation hold - Using resonable steps to prevent the distruction of information in possesion that maybe used for a pending litigation. 
 - Data may need to be retained for legal reasons which means storage and cost must be considered. (Large amount of data for an extended period).
 - Scope of preservation - Party may need to retain data that is resonable for the litigation but client may over-preserve if granular preservation is not supported.
-- Data collection
+- Data collection (Electronically Stored Information "**ESI**")
   - Data collection can be hard as customer may not have the required access.
-  - Access and bandwidth costs
+  - Access and bandwidth costs - Prevents collection of large amount of data quickly. Establish a protocol to handle this.
+  - Bit byt bit imagin - Not generally possible due to multitenancy. Usually mandated due to resource pooling. 
+  - No direct access - IT equipment seizures for the purpose of evidence preservation.
+  - Standard formats (e.g. PDF) - Favour this over proprietary unless some evidence is lost during conversion. 
+  - Storing data in the cloud not does prevent its being used as evidence. Should not be considered more or less admissible or credible merely because they were created or stored in the cloud.
+  - Discovery by design - data in the cloud is available during e-discovery. 
+  - [Sedona Conference](https://thesedonaconference.org/) - Recommendations for handlin ESI. (non-profit organisation)
