@@ -232,6 +232,7 @@ determine how an organisation is run.
 - Metastructure is used to create resources using resource pools (note in cloud resources are pooled).
 - Provider is responsible for ensuring the management plane is secure.
 - Customer is responsible for configuring its use. Include securing and managing credentials.
+- Ensure stronge perimeter security for API gateways and web consoles.
 
 ### Consideration for BC/DR
 - Continuity and recovery within the provider itself (less multi-cloud)
@@ -243,7 +244,18 @@ determine how an organisation is run.
 - Use multi-zone deployments to address high availability
 - Keep a note that single resource is less resilient in cloud than in private due to fragility of virtualised resources running in complex environments.
 - Life and shift to cloud without architectural changes can reduce resiliency.
-- Design for RTO and RPO in traditional environments
+- Design for RTO and RPO in traditional environments.
+- Take a risk based approach.
+
+### Preparation for DR
+- Metastructure - Backup configuration (IaC)
+- Software defined infrastructure - Template where possible
+- Any custom images are available in right regions
+- Infostructure - data synchonisation
+- Applistructure - message queues and code is available, PAAS limitaions (dont forget key management services)
+- Real-time failover may not be possible - design apps and RPO appropriately.
+- SAAS providers have the bigest outage concern. Extracting data periodically might be the only way.
+- Data residency is a key factor.
 
 ### Interaction with cloud
 - Usually through APIs which are REST, CLI and SDKs.
