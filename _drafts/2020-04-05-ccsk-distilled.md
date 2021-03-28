@@ -207,3 +207,25 @@ determine how an organisation is run.
 - Shared reponsibility model - customer and provider responsibilities
   - Data ownership - who owns the data. Defines rules how data is managed.
   - Custodianship - who is managin the data. Implements the rules.
+- Information classification 
+- Information management policies - what is allowed to go and where in cloud?
+- Location and jurisdictions -legal requirements are hard lines.
+- Authorisatins
+- Privacy - sum of regulatory, contractual and commitments to customer
+- Contractual - legal tool for extending governance to cloud
+- Security controls - tools to implement data governance
+
+### Data security lifecycle
+- Describes the phases information passes through but does not address its location or how it is accessed.
+- Information lifecycle does not map well to needs of security professionals.
+- Data security lifecycle maps to needs of the security audience.
+- Phases (note; things that can be done (functions) to data are **Read**, **Process** and **Store**). Access is controlled by entitlements.
+  - Create - Note that updating data creates new data.
+  - Store
+  - Use
+  - Share
+  - Archive
+  - Destroy
+
+# 6. Management plane and business continuity (BC)
+- Management plane is the interface to connect to metastructure and configure the cloud.
