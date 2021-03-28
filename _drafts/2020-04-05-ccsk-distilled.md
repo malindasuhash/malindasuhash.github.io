@@ -263,4 +263,19 @@ determine how an organisation is run.
 - Identity and Access management (IAM) used to manage access to management console. 
 - RBAC allows super or low-level administrative roles/permissions. 
 - All priviledge account must use multi-factor (MFA). Most effective security control to prevent wide range of attacks.
-- 
+
+# 7. Infrastructure security
+- Foundation for operatin securely in the cloud. Lowest layer of security from customer perspective.
+- Macro-layers
+  - Fundamental resources that pooled together to create a cloud. (raw compute, networks and storage)
+  - Virtual abstracted infrastructure
+- Networks in cloud (they are separate physical networks)
+  - Management network - traffic from management plane
+  - Storage network - connects virtual storage to virtual machines
+  - Service network - communication beween virtual networks. Build the network resource pool for customers.
+- Network virtualisations
+  - Virtual Local Area Networks (VLANs) - Designed for single tenant networks (separate different departments/business units). Not suitable for cloud-scale networks.
+  - Software defined networking (SDN) - Complete abstraction over physical networks. Offers higher flexibility and isolation. Security isolation boundary. Uses packet encapsulation to move packets around the network and virtual machines are unaware instead they connect using a standard networking interface. 
+- Note that customer looses the direct management of underlying physical network. 
+- Normal practice of inserting appliances between communication paths is not always possible as networking is virtualised.
+- Customers expected to use in-line virtual appliances or software agents are used for security. 
