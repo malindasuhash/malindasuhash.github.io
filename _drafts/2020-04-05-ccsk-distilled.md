@@ -278,4 +278,9 @@ determine how an organisation is run.
   - Software defined networking (SDN) - Complete abstraction over physical networks. Offers higher flexibility and isolation. Security isolation boundary. Uses packet encapsulation to move packets around the network and virtual machines are unaware instead they connect using a standard networking interface. 
 - Note that customer looses the direct management of underlying physical network. 
 - Normal practice of inserting appliances between communication paths is not always possible as networking is virtualised.
-- Customers expected to use in-line virtual appliances or software agents are used for security. 
+- Customers expected to use in-line virtual appliances or software agents for security. 
+  - Virtual appliances can become bottlenecks as they cannot fail-open (all traffic must be intercepted).
+  - Cost of resources to meet network requirements
+  - Virtual appliance is expected to auto-scale to match elasticity (metered service and rapid provisioning)
+  - Keep up with velocity of changes in the virtual network.
+  - Virtual IP assignments changes frequently, therefore traffic is expected identify by unique ID than IP. This could impact alerting and monitoring. Dynamic environment. 
