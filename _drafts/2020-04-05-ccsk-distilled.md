@@ -228,4 +228,27 @@ determine how an organisation is run.
   - Destroy
 
 # 6. Management plane and business continuity (BC)
-- Management plane is the interface to connect to metastructure and configure the cloud.
+- Management plane is the interface to connect to metastructure and configure the cloud. Part of Broad network access, metered service (self-service).
+- Metastructure is used to create resources using resource pools (note in cloud resources are pooled).
+- Provider is responsible for ensuring the management plane is secure.
+- Customer is responsible for configuring its use. Include securing and managing credentials.
+
+### Consideration for BC/DR
+- Continuity and recovery within the provider itself (less multi-cloud)
+- BC/DR is shared responsibility too
+- Must account for entire logical stack
+- Prepare for provider outage.
+- Seek/consider options for portability (Containers)
+- Architect for failure
+- Use multi-zone deployments to address high availability
+- Keep a note that single resource is less resilient in cloud than in private due to fragility of virtualised resources running in complex environments.
+- Life and shift to cloud without architectural changes can reduce resiliency.
+- Design for RTO and RPO in traditional environments
+
+### Interaction with cloud
+- Usually through APIs which are REST, CLI and SDKs.
+- Uses variety of authentication mechanisms (e.g. OAuth, Federation)
+- Identity and Access management (IAM) used to manage access to management console. 
+- RBAC allows super or low-level administrative roles/permissions. 
+- All priviledge account must use multi-factor (MFA). Most effective security control to prevent wide range of attacks.
+- 
