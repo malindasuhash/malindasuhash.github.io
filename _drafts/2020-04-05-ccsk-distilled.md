@@ -308,4 +308,5 @@ determine how an organisation is run.
 - Hybrid connections may reduce the security of cloud networks (hybrid - between private to public cloud)
 - **Bastion** or **transit** networks are an emerging standard
 - Compute abstractions
-  - 
+  - Virtual machines - host level isolation offered. 
+  - Containers - code execution isolation, shares resources from the operating system. Runs segregated processes. Container configuration provides capabilities available for the container. Process isolation technique.
