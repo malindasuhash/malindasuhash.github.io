@@ -284,3 +284,17 @@ determine how an organisation is run.
   - Virtual appliance is expected to auto-scale to match elasticity (metered service and rapid provisioning)
   - Keep up with velocity of changes in the virtual network.
   - Virtual IP assignments changes frequently, therefore traffic is expected identify by unique ID than IP. This could impact alerting and monitoring. Dynamic environment. 
+
+### SDN benefits
+- Ability to build many virtual networks without the constraints imposed by physical hardware. No more address conflicts as each network is isolated (two networks with the same CIDR blocks). Think micro-segmentation.
+- SDN firewals (security groups) - Defines a set of policies (egress and ingress traffic rules).
+  - Ability to assign security groups based on tags. 
+  - Default deny
+  - Granular rules
+  - Allows application between hosts as they are (security groups) managed outside of hosts.
+  - Isolation of each virtual machine is possible without any additional hardware costs.
+  - Many network attacks are eliminated by default compared to physical networks.
+  - Packet encryption is possible.
+- Host firewalls
+  - Difficult manage at scale
+  - If a system is compromised, then easy to alter the host firewall too.
