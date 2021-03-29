@@ -298,3 +298,4 @@ determine how an organisation is run.
 - Host firewalls
   - Difficult manage at scale
   - If a system is compromised, then easy to alter the host firewall too.
+- Microsegmentation
