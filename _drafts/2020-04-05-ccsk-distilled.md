@@ -298,4 +298,14 @@ determine how an organisation is run.
 - Host firewalls
   - Difficult manage at scale
   - If a system is compromised, then easy to alter the host firewall too.
-- Microsegmentation
+- Microsegmentation (hypersegmentation) - usng virtual networks to run smaller isolated networks.
+  - Option was not available previously because of cost.
+  - Reduce blast radius. (maintains segregation and isolation)
+  - Lateral movement is difficult 
+  - Increase operational cost
+  - Greater flexibility and security for evolving network topologies
+  - Note that providers are responsible for perimeter security
+- Hybrid connections may reduce the security of cloud networks (hybrid - between private to public cloud)
+- **Bastion** or **transit** networks are an emerging standard
+- Compute abstractions
+  - 
