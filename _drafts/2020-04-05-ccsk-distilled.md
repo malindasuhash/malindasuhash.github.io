@@ -305,6 +305,7 @@ determine how an organisation is run.
   - Increase operational cost
   - Greater flexibility and security for evolving network topologies
   - Note that providers are responsible for perimeter security
+  - Implement cloud firewalls per-workflow instead of per-network basis.
 - Hybrid connections may reduce the security of cloud networks (hybrid - between private to public cloud)
 - **Bastion** or **transit** networks are an emerging standard
 - Compute abstractions
@@ -318,3 +319,49 @@ determine how an organisation is run.
   - Reduced vulnerability scanning on running workloads.
   - Consistent image creation process is required (automation to update deployments)
   - Security testing integrated into imagine building process
+- Impact on standard workloads
+  - No agents on non-VM based workloads
+  - Traditional agents may impede performance
+  - Agents expected to be cloud-ready (some agents maybe unaware of runnin environment or auto-scaling)
+  - Agents might require additional ports to be opened.
+  - IP addresses are dynamically assigned to multiple systems in a short duration (elastic)
+  - Logs should be collected externally due to high velocity of change.
+  - Logging architecture has to account for cloud storage and cost
+- Vulnerability assessement
+  - Require notification of asssessments (pen testing)
+  - Default deny will prevent assessements (require opening up ports)
+  - Assessements maybe able to run during image creation
+ 
+# 8. Virtualisation and containers
+- Key building block (categories)
+  - Compute
+  - Network
+  - Storage
+  - Containers
+- Virtualisation is essential for cloud and adds two further layers of security
+  - Security of virtualisation technology
+  - Security controls for virtual assets
+- Provider responsible for physical and virtualisation platform
+- Customer is responsible for available virtual security controls and understanding risks. 
+  - When to encrypt cloud storage
+  - When to configure virtual firewalls
+  - When to use dedicated or shared hosts  
+- Provider must assure **isolation** and **virtualisation infrastructure**. Virtualisation of cloud users so that volatile memory security is secured from each tenent (referring back to isolation concept). 
+- Customer must implement security for the workload.
+  - Secure cloud management portal
+  - Monitor and logging
+  - Image asset management
+  - Dedicated hosting where appropriate
+  - Responsible for security within virtualised resources
+ ### Networks
+ - Route traffic to a virtual network monitoring or filter so that communication between VMs in a same physical host can be monitored. Or bridge network traffic back out to the network via a virtual appliance on the same network. Note that both will create bottle-necks and less-efficent routing.
+ - Provider is expected to disable packet sniffing and metadata leaks that could expose configuration between tenents. Neither tagging or SDN-level metadata.
+### Storage
+- Achieved through Storage Area Networks (SAN) and Network Attached Storage (NAS).
+- Data is replicated across different locations (encrypted)
+### Containers
+- Isolated userspace but shared kernel space
+- Three components
+  - Execution environment74
+  - Orchestration and scheduling
+  - Repository for container images
