@@ -310,3 +310,11 @@ determine how an organisation is run.
 - Compute abstractions
   - Virtual machines - host level isolation offered. 
   - Containers - code execution isolation, shares resources from the operating system. Runs segregated processes. Container configuration provides capabilities available for the container. Process isolation technique.
+  - Platform-based workloads - running solutions on shared PAAS (e.g. procedures on a database platform).
+  - Serverless computing - executes application code directly. Provider manage all the underlying layers including foundation security.
+- Immutable workloads
+  - No longer make any changes to the runnin workflow (no image change). Update the underlying image and redeploy replacing the old. There is degree of immutability (e.g. centralised configuration management pushing changes to instances).
+  - Enable stronger security - no remote login, file integrity monitoring
+  - Reduced vulnerability scanning on running workloads.
+  - Consistent image creation process is required (automation to update deployments)
+  - Security testing integrated into imagine building process
