@@ -397,3 +397,7 @@ determine how an organisation is run.
 - Testing of IR expected to be carried out annually or after a significant change.
 
 # 10. Application security
+- Early designs to maintaining and defending production applications.
+- Higher baseline security - offered by provider as they need to maintain standards and compliance to regulations.
+- Responsiveness - automation via APIs.
+- Isolated environments - hyper-segregation
