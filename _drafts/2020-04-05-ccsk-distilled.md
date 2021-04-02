@@ -361,7 +361,39 @@ determine how an organisation is run.
 - Data is replicated across different locations (encrypted)
 ### Containers
 - Isolated userspace but shared kernel space
+- Offers task segregation over full security isolation
 - Three components
-  - Execution environment74
+  - Execution environment
   - Orchestration and scheduling
   - Repository for container images
+- Providers responsibility to secure physical infrastructure - given
+- Secure orchestrator management plane
+- Secure image repository
+- Tasks with the same security context can sit together in the same virtual or physical host
+
+# 9. Incident response
+- Usually part of the information security program.
+- Access to forensic data and governance is different in cloud
+
+### Incident response lifecycle
+- Prepartion for IR is the key.
+- Stages
+  - Preparation - Setup IR capability in the organisation
+  - Detection and analysis - Alerting, scope of the incident, use platform logs, SAAS is difficult. Data sources is quite different; feed off management plane when data not available. Limited network visibility. Usually network logs from provider tend to be flow logs not full packet capture. Instrumentation when provider logs are not available. Validate whether provider logs meet chain of custody requirements. Greater need to automate forensic due to dynamic nature of the cloud.
+  - Containment and eradication - Take systems offline, data loss vs service availability, chain of custody. Break-glass procedure to use root master credentials to ensure full visibility (as security trimming might make some log not accessible or visible). SDN helps to build clean environment and isolate attacks (think micro-segmentation) using virtual firewalls. No need to immediately eradicate attacker, instead isolate using virtual firewalls. With SAAS and PAAS quite hard since there is no access to VMs.
+  - Post-moretem - What could be done? could we have detected early, if so how?. Understand data limitations and see for improvements.
+- All stages/phases of IR is impacted by cloud.
+  - SLAs and governance - Understand these and require coordination with provider.
+- Built security into the code that runs in the container
+- Need to know what data and logs are available for investigation
+- Cloud jump kit - Tools needed to investigate in a remote location
+- Architect for faster detection (containment and recoverability)
+- Things to help investigation
+  - Enable instrumentation
+  - Utilise isolation
+  - Use immutable servers
+  - Implement application stack map
+  - Threat modeling and tabletop exercise
+- Testing of IR expected to be carried out annually or after a significant change.
+
+# 10. Application security
