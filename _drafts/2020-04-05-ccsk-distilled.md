@@ -451,6 +451,7 @@ determine how an organisation is run.
   - Enforcing information lifecycle management - location/residency
   - Compliance including audits
   - Backups and busines continutity
+  - Use CASB to monitor data flowing into SAAS.
 - Storage types (data dispersion/fragmentation of bit splitting to chunk/break up data to store in multiple places for higher availability/durability). Physically dispersed.
   - Object store - typically files
   - Volumne store - virtual hard-disks for VMs
@@ -464,4 +465,31 @@ determine how an organisation is run.
   - Transport layer encryption
   - Proxy encryption - encryption whilst be migrated
   - Remember - access control and encryption is building blocks of data security
-  
+- Three levels of access control
+  - Management plane - directly accessing the cloud management console
+  - Public and internal sharing controls
+  - Applicaion level controls - design and implementation of application specific controls  
+- Entitlement matrix - defines which users, groups and roles should have access to which resources and functions. Make sure to validate your controls frequently (ideally continously).
+- Encryption and tokenisation
+  - Key management is as important as encryption. (Data --> encryption engine --> key management)
+  - Encryption and decryption (platin text --> ciphertext)
+  - Tokenisation replaces data with random value - Used when format of the data is important
+- Volumn storage encryption - Instance and externally managed encryption. Model depends on where the key is managed (instance itself or external system but issued to instance on-demand)
+- Object and file storage - Client-side (keys managed by client) and server-side encryption (after data is transferred in, provider has access to the keys). Proxy encryption where a proxy handles crypto operations. 
+- SAAS recommended to use per-customer keys where possible to enforce multi-tenancy isolation. 
+- Considerations for key management
+  - Performance
+  - Accessibility
+  - Latency
+  - Security
+- Key management options
+  - HSM - Hardware security module
+  - Virtual appliance - software based key manager
+  - Provider offered - Key management service offered by the provider
+  - Hybrid - Combination of HSM and Virtual
+- Customer managed keys - Customer manage the keys whereas provider offers the encryption engine. 
+- Key management and data storage systems should be separate. 
+- Consider air-gap between systems (e.g. use provider based messaging or object storage so that attacker must compromise cloud systems to gain access)
+- Data segregation between test and production is important. 
+
+# 12. Identity, entitilement and access management
