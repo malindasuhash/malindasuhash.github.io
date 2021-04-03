@@ -401,3 +401,38 @@ determine how an organisation is run.
 - Higher baseline security - offered by provider as they need to maintain standards and compliance to regulations.
 - Responsiveness - automation via APIs.
 - Isolated environments - hyper-segregation
+- Elasticity - greater use of immutable infrastructure
+- Automation through DevOps.
+- Management plane security is important too
+- Areas
+  - Secure software development lifecycle (SSDL)- from design to deployment
+  - Design and architecture - trends in designing applications in cloud
+  - DevOps - CI/CD in development environment
+  - Secure design and development - training and development organisation-wide standards
+  - Secure deployment - security and testing activities
+  - Secure operations - securing and maintaining applications
+- Cloud impact every phase of SSDL
+- Metastructure and management plane security is part of application security
+- Phases
+  - Training - Secure coding, Security tests
+  - Define - Code standards, Security functional requirements
+  - Design - Threat modeling, secure design
+  - Develop - Code review, unit testing, static and dynamic analysis
+  - Test - Vulnerability assessments, QA, functional tests and dynamic analysis
+- Deployment
+  - Code review - manual activity
+  - Unit, regression and functional testing - addition of new security testing
+  - Static application security testing - checks for embeded credentials (never do this)
+  - Dynamic application security testin - tests running applications (web vulnerability, fuzzing)
+- Vulnerability assessments can be integrated into CI/CD. 
+  - Running assessments against images/containers
+  - Test entire infrastructure in test environment and test it (as Infrasturcture as code). 
+  - Host based vulnerability assessments - no permission from provider required
+- Pen testing
+  - Testing firm that has experience in the cloud provider
+  - Include developers and administrators
+  - Test for tenancy isolation by providing access as a tenent to the system.
+- CI expected to include
+  - Functional tests
+  - Non-functional tests
+  - Security tests
