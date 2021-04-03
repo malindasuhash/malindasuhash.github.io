@@ -492,4 +492,20 @@ determine how an organisation is run.
 - Consider air-gap between systems (e.g. use provider based messaging or object storage so that attacker must compromise cloud systems to gain access)
 - Data segregation between test and production is important. 
 
-# 12. Identity, entitilement and access management
+# 12. Identity, entitilement and access management (aka Identity management IdM)
+- Both provider and customer is responsible for this.
+- Maps and entity to an identity. Entity could be a userm system, device or code. Identity is an unique expression of an entity within a namespace.
+- Then makes decisions on what this identity can do using various attributes. 
+- Federation is used for map single identity to multiple services. This is achieved by building trust relationships between organisations and using standard protocols for integration. Federation at scale.
+- Identifer - means by which an identity can be asserted.
+- Authentication (AuthN) - process of confirming identity
+- Authorisation (AuthZ) - allowing identity to access something.
+- Federated identity management - process of asserting identity across different systems (think single signon).
+- SAML - for authentication and authorisation - federation 
+- OAuth - authorisation (widely used for web services) - delegating access control/authorisation between services.
+- OpenId - standard for federated authentication. 
+- XACML - standard for **attribute** based access controls and authorisations. 
+- SCIM - standard for exchanging identity information between domains. (for provisioning and deprovisionin accounts in external systems)
+- HTTP request signining - authenticating to REST APIs.
+- Federation is good, but there might be accounts created only in the cloud for break-glass scenarios (or backup operators, accounts to help debug federation).
+- Identity broker - hub and spoke identity. Internal identity provider communicates with a central broker which federate identity to other systems (federation between identity providers and relying party). 
