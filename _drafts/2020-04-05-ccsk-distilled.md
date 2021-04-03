@@ -436,3 +436,32 @@ determine how an organisation is run.
   - Functional tests
   - Non-functional tests
   - Security tests
+- Design and architecture
+  - Segreation by default - applications runs on isolated environments
+  - Immutable infrastructure - disable remote logins, file integrity monitoring (FIM)
+  - Use of microservices - auto-scaling groups for scalabilty/elasticity
+  - Serverless - running workflow on providers platform. 
+  - Software defined security and event driven security
+
+# 11. Data security and encryption
+- Enforcement tool for information and data governance. Risk based.
+- Controls
+  - Controlling what goes into the cloud
+  - Access control, encryption, architecture, monitoring/alerting, DLP and rights management
+  - Enforcing information lifecycle management - location/residency
+  - Compliance including audits
+  - Backups and busines continutity
+- Storage types (data dispersion/fragmentation of bit splitting to chunk/break up data to store in multiple places for higher availability/durability). Physically dispersed.
+  - Object store - typically files
+  - Volumne store - virtual hard-disks for VMs
+  - Databases
+- Other factors
+  - Identify key data repositories (database and file activity monitoring). Detection of large data transfers.
+  - Monitor cloud usage (Cloud Access and Security Broker - CASB, identification of cloud service usage by network, integration with network gateways or DNS queries. Offers DLP controls too. URL filtering - helps detemine which services are being used.)
+  - Application/platform - CDNs, caching
+- Securing transfers
+  - Client side encryption - data is encrypted before sending
+  - Transport layer encryption
+  - Proxy encryption - encryption whilst be migrated
+  - Remember - access control and encryption is building blocks of data security
+  
