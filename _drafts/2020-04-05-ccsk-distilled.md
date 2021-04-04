@@ -6,7 +6,7 @@ categories: Security CCSK
 ---
 The Cloud Security is an essential skills for IT professionals and Certificate of Cloud Security Knowledge offers an excellent initial step. There is more to discover about CCSK from [Cloud Security Alliance](https://cloudsecurityalliance.org/education/ccsk/) who administer it. 
 
-This goal of this post is to summarise the key knowledge expected by CCSK if you are thinking of taking the exam.
+The following are the notes I took as part of learning towards CCSK.
 
 # 1. Cloud concepts 
 
@@ -574,4 +574,8 @@ determine how an organisation is run.
   - Lack of visibility and network logs
   - High use of cloud management console
   - Reduced opportunity for security testing as the code is hosted in provider infrastructure
-  - 
+  
+# 15. Cloud Control Matrix (CCM) and Consensus Assessment Initiative Questionnaire (CAIQ)
+- CCM - a list of controls and guidances that map to standards such as PCI, ISO. It can be used as a tool for the systematic assessment of a cloud implementation, and provides guidance on which security controls should be implemented by which actor within the cloud supply chain.
+- CAIQ - list of questions that document what security controls exists in IAAS, PAAS and SAAS by providers. 
+- STAR registry - a collection of questionnaires completed by providers that demonstrate their security posture. Essentially answers to CCM and CAIQ. [Registry](https://cloudsecurityalliance.org/star/registry/)
