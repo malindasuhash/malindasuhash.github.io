@@ -519,6 +519,7 @@ determine how an organisation is run.
 
 # 13. Security as a service 
 - Service delivered as a cloud service - meets all the properties of cloud.
+- Make sure to validate data retention needs with provider.
 - Benefits
   - Cloud computing service - scale, elasticity, cost etc
   - Expertise - provider offered staff and capabilities
@@ -529,3 +530,19 @@ determine how an organisation is run.
   - Lack of visibility 
   - Regulation difference
   - Handling of regulated data - data that is captured as part of security inspection are handled appropriately.
+  - Potential lock-in
+- Available services
+  - Federated brokers
+  - CASB - cloud security gateways (detect, assess and potentially block)
+  - Web security - anti-malware, secure browsing
+  - Email security - security for inbound and outbound, phishing and malicious attacks
+  - WAF
+  - SIEM - Security Information and Event Management - aggreate log events
+  - Encryption and key management
+- Security assessments
+  - Traditional security/vulnerability assessments (for assests deployed in the cloud)
+  - Application security assessmenets (traffic inspection, and anti-DDOS)
+  - IPS/IDS - rule bases, heuristics and behaviour models
+  - Cloud assessment tools (checks cloud configuration)
+
+# 14. Related technologies
