@@ -6,7 +6,7 @@ categories: Security CCSK
 ---
 The Cloud Security is an essential skills for IT professionals and Certificate of Cloud Security Knowledge offers an excellent initial step. There is more to discover about CCSK from [Cloud Security Alliance](https://cloudsecurityalliance.org/education/ccsk/) who administer it. 
 
-The following are the notes I took as part of learning towards CCSK.
+The following are the notes I jotted down as part of my learning towards CCSK.
 
 # 1. Cloud concepts 
 
