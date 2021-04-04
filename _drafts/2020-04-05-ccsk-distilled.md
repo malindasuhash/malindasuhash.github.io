@@ -546,3 +546,32 @@ determine how an organisation is run.
   - Cloud assessment tools (checks cloud configuration)
 
 # 14. Related technologies
+- Technologies seen in cloud
+  - Big data - extremely large datasets - high volume, high velocity /or high variety.
+  - Internet of Things (IoT) 
+  - Mobile devices 
+  - Serverless computing
+- Big data
+  - Data collection - ingestion, different tools and platforms is a concerns for security and privacy.
+  - Data storage - ability to store large datasets
+  - Processing - distributed processin, tools capable of distributing processing jobs.
+  - Encryption should be used in primary, intermediatory and backup storage (collection and storage pipelines)
+- Internet of Things (IoT)
+   - Used for tracking purposes
+   - Connected healthcare and lifestyle applications
+   - Data collection and sanitisation
+   - Device registration, authentication and authorisation (stored credentials is an issue).
+   - Weak encryption protocols
+   - Ability to patch devices in the field
+- Mobile
+  - Device registration, authentication and authorisation
+  - Data stored in the device should be protected too
+  - Certificate pinning and validation within device to overcome connectibity security.
+- Serverless computing
+  - Servers and their configuration is hidden away from customers
+  - Examples: Object storage, cloud load balancers, cloud databases, machine learning, message queues
+  - Higher security burden on provider
+  - Lack of visibility and network logs
+  - High use of cloud management console
+  - Reduced opportunity for security testing as the code is hosted in provider infrastructure
+  - 
