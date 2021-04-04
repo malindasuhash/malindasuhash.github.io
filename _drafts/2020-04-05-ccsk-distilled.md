@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "CSSL distilled"
+title:  "102: CCSK"
 date:   2019-03-23 21:03:36 +0530
 categories: Security CCSK
 ---
