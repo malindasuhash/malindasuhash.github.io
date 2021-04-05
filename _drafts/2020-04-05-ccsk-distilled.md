@@ -233,7 +233,7 @@ The following are the notes I jotted down as part of my learning towards CCSK.
 - Metastructure is used to create resources using resource pools (note in cloud resources are pooled).
 - Provider is responsible for ensuring the management plane is secure.
 - Customer is responsible for configuring its use. Include securing and managing credentials.
-- Ensure stronge perimeter security for API gateways and web consoles.
+- Ensure strong perimeter security for API gateways and web consoles.
 
 ### Consideration for BC/DR
 - Continuity and recovery within the provider itself (less multi-cloud)
@@ -255,7 +255,7 @@ The following are the notes I jotted down as part of my learning towards CCSK.
 - Infostructure - data synchonisation
 - Applistructure - message queues and code is available, PAAS limitaions (dont forget key management services)
 - Real-time failover may not be possible - design apps and RPO appropriately.
-- SAAS providers have the bigest outage concern. Extracting data periodically might be the only way.
+- SAAS providers have the biggest outage concern. Extracting data periodically might be the only way.
 - Data residency is a key factor.
 
 ### Interaction with cloud
@@ -266,7 +266,7 @@ The following are the notes I jotted down as part of my learning towards CCSK.
 - All priviledge account must use multi-factor (MFA). Most effective security control to prevent wide range of attacks.
 
 # 7. Infrastructure security
-- Foundation for operatin securely in the cloud. Lowest layer of security from customer perspective.
+- Foundation for operating securely in the cloud. Lowest layer of security from customer perspective.
 - Macro-layers
   - Fundamental resources that pooled together to create a cloud. (raw compute, networks and storage)
   - Virtual abstracted infrastructure
@@ -287,7 +287,7 @@ The following are the notes I jotted down as part of my learning towards CCSK.
   - Virtual IP assignments changes frequently, therefore traffic is expected identify by unique ID than IP. This could impact alerting and monitoring. Dynamic environment. 
 
 ### SDN benefits
-- Ability to build many virtual networks without the constraints imposed by physical hardware. No more address conflicts as each network is isolated (two networks with the same CIDR blocks). Think micro-segmentation.
+- Ability to build many virtual networks without the constraints imposed by physical hardware. No more address conflicts as each network is isolated (two networks with the same CIDR blocks is possible). Think micro-segmentation.
 - SDN firewals (security groups) - Defines a set of policies (egress and ingress traffic rules).
   - Ability to assign security groups based on tags. 
   - Default deny
@@ -299,14 +299,14 @@ The following are the notes I jotted down as part of my learning towards CCSK.
 - Host firewalls
   - Difficult manage at scale
   - If a system is compromised, then easy to alter the host firewall too.
-- Microsegmentation (hypersegmentation) - usng virtual networks to run smaller isolated networks.
+- Microsegmentation (hypersegmentation) - using virtual networks to run smaller isolated networks.
   - Option was not available previously because of cost.
   - Reduce blast radius. (maintains segregation and isolation)
   - Lateral movement is difficult 
   - Increase operational cost
   - Greater flexibility and security for evolving network topologies
   - Note that providers are responsible for perimeter security
-  - Implement cloud firewalls per-workflow instead of per-network basis.
+  - Implement cloud firewalls **per-workflow** instead of per-network basis.
 - Hybrid connections may reduce the security of cloud networks (hybrid - between private to public cloud)
 - **Bastion** or **transit** networks are an emerging standard
 - Compute abstractions
@@ -315,7 +315,7 @@ The following are the notes I jotted down as part of my learning towards CCSK.
   - Platform-based workloads - running solutions on shared PAAS (e.g. procedures on a database platform).
   - Serverless computing - executes application code directly. Provider manage all the underlying layers including foundation security.
 - Immutable workloads
-  - No longer make any changes to the runnin workflow (no image change). Update the underlying image and redeploy replacing the old. There is degree of immutability (e.g. centralised configuration management pushing changes to instances).
+  - No longer make any changes to the running workflow (no image change). Update the underlying image and redeploy replacing the old. There is degree of immutability (e.g. centralised configuration management pushing changes to instances).
   - Enable stronger security - no remote login, file integrity monitoring
   - Reduced vulnerability scanning on running workloads.
   - Consistent image creation process is required (automation to update deployments)
@@ -323,7 +323,7 @@ The following are the notes I jotted down as part of my learning towards CCSK.
 - Impact on standard workloads
   - No agents on non-VM based workloads
   - Traditional agents may impede performance
-  - Agents expected to be cloud-ready (some agents maybe unaware of runnin environment or auto-scaling)
+  - Agents expected to be cloud-ready (some agents maybe unaware of running environment or auto-scaling)
   - Agents might require additional ports to be opened.
   - IP addresses are dynamically assigned to multiple systems in a short duration (elastic)
   - Logs should be collected externally due to high velocity of change.
@@ -356,7 +356,7 @@ The following are the notes I jotted down as part of my learning towards CCSK.
   - Responsible for security within virtualised resources
  ### Networks
  - Route traffic to a virtual network monitoring or filter so that communication between VMs in a same physical host can be monitored. Or bridge network traffic back out to the network via a virtual appliance on the same network. Note that both will create bottle-necks and less-efficent routing.
- - Provider is expected to disable packet sniffing and metadata leaks that could expose configuration between tenents. Neither tagging or SDN-level metadata.
+ - Provider is expected to disable packet sniffing and metadata leaks that could expose configuration between tenents. Neither tagging nor SDN-level metadata.
 ### Storage
 - Achieved through Storage Area Networks (SAN) and Network Attached Storage (NAS).
 - Data is replicated across different locations (encrypted)
@@ -387,7 +387,7 @@ The following are the notes I jotted down as part of my learning towards CCSK.
   - SLAs and governance - Understand these and require coordination with provider.
 - Built security into the code that runs in the container
 - Need to know what data and logs are available for investigation
-- Cloud jump kit - Tools needed to investigate in a remote location
+- **Cloud jump kit** - Tools needed to investigate in a remote location
 - Architect for faster detection (containment and recoverability)
 - Things to help investigation
   - Enable instrumentation
