@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "102: CCSK"
-date:   2019-03-23 21:03:36 +0530
+date:   2020-03-23 21:03:36 +0530
 categories: Security CCSK
 ---
 The Cloud Security is an essential skills for IT professionals and Certificate of Cloud Security Knowledge offers an excellent initial step. There is more to discover about CCSK from [Cloud Security Alliance](https://cloudsecurityalliance.org/education/ccsk/) who administer it. 
@@ -19,7 +19,7 @@ The following are the notes I jotted down as part of my learning towards CCSK.
 - On-demand (self-service)
 - Multitenancy (included in ISO)
 
-### Service Models (Sometimes called "SPI")
+### Service Models (aka "SPI")
 - Software as a Service (SAAS) (Application hosted and mananged by provider). Multitenant applications. Provider is responsible for all aspect of application security (except for user management - authorisations and entitlements).
 - Platform as a Service (PAAS) (Database as a service, File storage, application and development platforms). Such platforms are built on IAAS and offered to customers for consumption by APIs. Provider is responsible for platform and customer is responsible for everything built on the platform. Think about securing a database with firewall or user access control. 
 - Infrasturcture as a Service (IAAS) (Bare VMs, physical facilities and infrastructure hardware). Provider is responsible for foundational security and customer is responsible for everything built on the infrastructure. 
@@ -37,15 +37,15 @@ The following are the notes I jotted down as part of my learning towards CCSK.
 - Applistructure - Applications deployed and underlying application services used to build them (e.g. message queues, AI, notification systems) (Protected by Application Security)
 
 ### Key notes
-- Techniques used to create cloud are abstraction and orchestration. Cloud abstract the resources from the underlying phyiscal infrastructure to create pools and use orchestration to carve out and deliver set of resources from pools.  
+- Techniques used to create cloud are abstraction and orchestration. Cloud abstract the resources from the underlying phyiscal infrastructure to create pools and use orchestration to carve out and deliver set resources from pools.  
 - Note that traditional virtualisation abstracts the underlying resources but lacks orchestration to pool them. It is a manual process but in cloud it is automated. 
 - The **cloud management plane** offers a web interface to manage cloud resources (e.g. launch instances, configure virtual networks)
 - Protection of the cloud management plane is top priority when designing a cloud security program. If an attacker managed to gain access to the cloud management plane, then the whole infrastructure is at risk of compromise.
 - The metastructure is the key difference between traditional IT and Cloud. Think self-service/on-demand too. 
-- Provider manage the physical infrastructure while customer manage portion of the virtual infrastructure.
+- Provider manage the physical infrastructure while customer *manage portion* of the virtual infrastructure. So it is a shared responsibility.
 - Shared responsibility model. There must be clear responsibility matrix that describe who is implementing which control from security perspective. 
-- **Concensus Assessment Initiative Questionnaire (CAIQ)** - Standard documentation for providers to document their security and compliance controls.
-- **Cloud Controls Matrix (CCM)** - Lists cloud security controls that maps to various security and compliance standards. 
+- **Concensus Assessment Initiative Questionnaire (CAIQ)** - standard documentation for providers to document their security and compliance controls.
+- **Cloud Controls Matrix (CCM)** - sists cloud security controls that maps to various security and compliance standards. 
 - **Cloud Security Models** are tools to help guide security decisions.
 - **Reference architectures** are templates for implementing cloud security.
 - The first step of implementing a cloud security process model is to identify necessary requirements. 
@@ -114,7 +114,7 @@ The following are the notes I jotted down as part of my learning towards CCSK.
   - Data controller - has the relationship with the user
   - Data processor - process data behalf of the data controller
   - Data owner - Also the data subject, the customer who owns the data (you and me)
-  - Data controller must ensure the data processor has adequate controls and safe guards. 
+  - Data controller must ensure the data processor has adequate controls and safeguards. 
   - What legal frameworks used depends on each country.
 - Security of personal data is essential for individual's privacy.
 - Data importer and exporter may need to sign a contract to ensure maintainance of privacy rights of users. 
@@ -125,12 +125,12 @@ The following are the notes I jotted down as part of my learning towards CCSK.
   - Russia - Data localisation law - require storage of citizen information within its borders. 
   - EU/EEA - GDPR applies when processing data of EU citizens. Establishment of controller or processor in EU/EEA. Data subjects given explicit concent to process data. Applies when data of EU/EEA citizens are processed anywhere. Privacy by design/default for applications. Data breach must be reported with 72 hours.
 - NIS directive - applies **Digital Service Providers (DSP)** to protection of networks and information systems in EU/EEA. Security requirements for essential services. Appies to providers who offer services in EU/EEA who are based outside EEA is in scope.
-- Data custodian - Similar to data controller must ensure security and protection of personal data especially when transferring to a third-party.
+- Data custodian - similar to data controller must ensure security and protection of personal data especially when transferring to a third-party.
 - Customer is expected to have a written contract with the provider with resonable security measures. 
 - The FTC and State attorneys general in USA are able to conduct enforcement actions against companies whose privacy practices are inconsistent with claims made in public disclosures. 
 - Data must be used only for the purposes for which it was collected.
 - Always look for adequate protection when data is being transferred across borders. 
-- Periodic monitoring, testin and evaluation of cloud services are required as they evolve and need to ensure the control efficacy.
+- Periodic monitoring, testing and evaluation of cloud services are required as they evolve and need to ensure the control efficacy.
 - Note that third-party audits and attestations are used by customers to build their own compliance systems. Therefore it is important to understand the scope of these audits and attestation to ensure its applicability.  
 - Due diligence may include
   - Quality of service
@@ -149,22 +149,22 @@ The following are the notes I jotted down as part of my learning towards CCSK.
   - Online searches to evaluate vendor reputation
 
 ### Electronic discovery
-- The process which an opposing party obtain private documents for use in litigation. Admissible in court. Admissible evidence means applicable and relevant. 
+- The process which an opposing party obtain private documents for use in litigation. Admissible in court. Admissible evidence means *applicable and relevant*. 
 - Hosting data in a cloud platform does not oblivate the obligation to produce information. Therefore important to understand what data is not available to the client from the outset. 
 - If the application platform or environment is at fault or relevant to the investigation, then the request has to be raised with the provider itself. 
 - Some e-discovery tools used in traditional infrastructure may not be usable/applicable in the cloud. This means extra time and monitory impact expected to be considered and perhaps included in the contract. 
 - Litigation hold - Using resonable steps to prevent the distruction of information in possesion that maybe used for a pending litigation. 
-- Data may need to be retained for legal reasons which means storage and cost must be considered. (Large amount of data for an extended period).
+- Data may need to be retained for legal reasons which means storage and cost must be considered. (large amount of data for an extended period).
 - Scope of preservation - Party may need to retain data that is resonable for the litigation but client may over-preserve if granular preservation is not supported.
 - Data collection (Electronically Stored Information "**ESI**")
   - Data collection can be hard as customer may not have the required access.
   - Access and bandwidth costs - Prevents collection of large amount of data quickly. Establish a protocol to handle this.
-  - Bit byt bit imagin - Not generally possible due to multitenancy. Usually mandated due to resource pooling. 
+  - Bit by bit image - Not generally possible due to multitenancy. Usually mandated due to resource pooling. 
   - No direct access - IT equipment seizures for the purpose of evidence preservation.
   - Standard formats (e.g. PDF) - Favour this over proprietary unless some evidence is lost during conversion. 
   - Storing data in the cloud not does prevent its being used as evidence. Should not be considered more or less admissible or credible merely because they were created or stored in the cloud.
   - Discovery by design - data in the cloud is available during e-discovery. 
-  - [Sedona Conference](https://thesedonaconference.org/) - Recommendations for handlin ESI. (non-profit organisation)
+  - [Sedona Conference](https://thesedonaconference.org/) - Recommendations for handling ESI. (non-profit organisation)
  
  # 4. Compliance and audit management
  - Compliance audit and assurance should be continous.
@@ -175,11 +175,11 @@ The following are the notes I jotted down as part of my learning towards CCSK.
   - Customer has to depend on third-party attestations of provider to understand their compliance and alignment/gaps.
   - Pass-through audit - form of compliance inheritance. Providers services including infrastructure has gone through an audit to a compliance standard. Provider maintains their compliance.
   - Customer must understand where their data and services are.
-  - Note that not all services are audits aganist all compliance regimes, customer must make sure they use the vetted services to build their compliant solution.
+  - Note that not all services are audits aganist all compliance regimes, customer must make sure they use vetted services to build their compliant solution.
 
 ### Audits
 - Audit and assessments are mechanisms to document compliance with internal and external requirements. It is expected to include compliance determination (what is the outcome). 
-- Audit management include management of all activities related to audits and assessmenets.
+- Audit management include management of all activities related to audits and assessments.
   - Determines requirements
   - Scope
   - Scheduling
@@ -207,11 +207,11 @@ The following are the notes I jotted down as part of my learning towards CCSK.
 - Multitenancy - Data is stored in shared infrastructure.
 - Shared reponsibility model - customer and provider responsibilities
   - Data ownership - who owns the data. Defines rules how data is managed.
-  - Custodianship - who is managin the data. Implements the rules.
+  - Custodianship - who is managing the data. Implements the rules.
 - Information classification 
 - Information management policies - what is allowed to go and where in cloud?
 - Location and jurisdictions -legal requirements are hard lines.
-- Authorisatins
+- Authorisations
 - Privacy - sum of regulatory, contractual and commitments to customer
 - Contractual - legal tool for extending governance to cloud
 - Security controls - tools to implement data governance
@@ -220,7 +220,7 @@ The following are the notes I jotted down as part of my learning towards CCSK.
 - Describes the phases information passes through but does not address its location or how it is accessed.
 - Information lifecycle does not map well to needs of security professionals.
 - Data security lifecycle maps to needs of the security audience.
-- Phases (note; things that can be done (functions) to data are **Read**, **Process** and **Store**). Access is controlled by entitlements.
+- Phases (things that can be done (functions) to data are **Read**, **Process** and **Store**). Access is controlled by entitlements.
   - Create - Note that updating data creates new data.
   - Store
   - Use
@@ -548,7 +548,7 @@ The following are the notes I jotted down as part of my learning towards CCSK.
 
 # 14. Related technologies
 - Technologies seen in cloud
-  - Big data - extremely large datasets - high volume, high velocity /or high variety.
+  - Big data - extremely large datasets - **high volume**, **high velocity** /or **high variety**.
   - Internet of Things (IoT) 
   - Mobile devices 
   - Serverless computing
