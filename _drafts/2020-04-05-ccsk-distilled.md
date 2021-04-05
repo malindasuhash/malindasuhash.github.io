@@ -398,7 +398,7 @@ The following are the notes I jotted down as part of my learning towards CCSK.
 - Testing of IR expected to be carried out annually or after a significant change.
 
 # 10. Application security
-- Early designs to maintaining and defending production applications.
+- Early designs for maintaining and defending production applications.
 - Higher baseline security - offered by provider as they need to maintain standards and compliance to regulations.
 - Responsiveness - automation via APIs.
 - Isolated environments - hyper-segregation
@@ -417,7 +417,7 @@ The following are the notes I jotted down as part of my learning towards CCSK.
 - Phases
   - Training - Secure coding, Security tests
   - Define - Code standards, Security functional requirements
-  - Design - Threat modeling, secure design
+  - Design - **Threat modeling**, secure design
   - Develop - Code review, unit testing, static and dynamic analysis
   - Test - Vulnerability assessments, QA, functional tests and dynamic analysis
 - Deployment
@@ -430,7 +430,7 @@ The following are the notes I jotted down as part of my learning towards CCSK.
   - Test entire infrastructure in test environment and test it (as Infrasturcture as code). 
   - Host based vulnerability assessments - no permission from provider required
 - Pen testing
-  - Testing firm that has experience in the cloud provider
+  - Testing firms that has experience in the cloud provider
   - Include developers and administrators
   - Test for tenancy isolation by providing access as a tenent to the system.
 - CI expected to include
@@ -438,7 +438,7 @@ The following are the notes I jotted down as part of my learning towards CCSK.
   - Non-functional tests
   - Security tests
 - Design and architecture
-  - Segreation by default - applications runs on isolated environments
+  - **Segreation by default** - applications runs on isolated environments
   - Immutable infrastructure - disable remote logins, file integrity monitoring (FIM)
   - Use of microservices - auto-scaling groups for scalabilty/elasticity
   - Serverless - running workflow on providers platform. 
@@ -472,8 +472,8 @@ The following are the notes I jotted down as part of my learning towards CCSK.
   - Applicaion level controls - design and implementation of application specific controls  
 - Entitlement matrix - defines which users, groups and roles should have access to which resources and functions. Make sure to validate your controls frequently (ideally continously).
 - Encryption and tokenisation
-  - Key management is as important as encryption. (Data --> encryption engine --> key management)
-  - Encryption and decryption (platin text --> ciphertext)
+  - Key management is as important as encryption. (**Data** --> **encryption engine** --> **key management**)
+  - Encryption and decryption (plain text --> ciphertext)
   - Tokenisation replaces data with random value - Used when format of the data is important
 - Volumn storage encryption - Instance and externally managed encryption. Model depends on where the key is managed (instance itself or external system but issued to instance on-demand)
 - Object and file storage - Client-side (keys managed by client) and server-side encryption (after data is transferred in, provider has access to the keys). Proxy encryption where a proxy handles crypto operations. 
@@ -497,7 +497,7 @@ The following are the notes I jotted down as part of my learning towards CCSK.
 - Both provider and customer is responsible for this.
 - Maps and entity to an identity. Entity could be a userm system, device or code. Identity is an unique expression of an entity within a namespace.
 - Then makes decisions on what this identity can do using various attributes. 
-- Federation is used for map single identity to multiple services. This is achieved by building trust relationships between organisations and using standard protocols for integration. Federation at scale.
+- Federation is used for map single identity to multiple services. This is achieved by building trust relationships between organisations and using standard protocols for integration. *Federation at scale*.
 - Identifer - means by which an identity can be asserted.
 - Authentication (AuthN) - process of confirming identity
 - Authorisation (AuthZ) - allowing identity to access something. Permission to do something. 
@@ -530,7 +530,7 @@ The following are the notes I jotted down as part of my learning towards CCSK.
 - Concerns
   - Lack of visibility 
   - Regulation difference
-  - Handling of regulated data - data that is captured as part of security inspection are handled appropriately.
+  - Handling of regulated data - are data that is captured as part of security inspection are handled appropriately.
   - Potential lock-in
 - Available services
   - Federated brokers
@@ -544,7 +544,7 @@ The following are the notes I jotted down as part of my learning towards CCSK.
   - Traditional security/vulnerability assessments (for assests deployed in the cloud)
   - Application security assessmenets (traffic inspection, and anti-DDOS)
   - IPS/IDS - rule bases, heuristics and behaviour models
-  - Cloud assessment tools (checks cloud configuration)
+  - Cloud assessment tools (to checks cloud configuration)
 
 # 14. Related technologies
 - Technologies seen in cloud
@@ -555,13 +555,13 @@ The following are the notes I jotted down as part of my learning towards CCSK.
 - Big data
   - Data collection - ingestion, different tools and platforms is a concerns for security and privacy.
   - Data storage - ability to store large datasets
-  - Processing - distributed processin, tools capable of distributing processing jobs.
-  - Encryption should be used in primary, intermediatory and backup storage (collection and storage pipelines)
+  - Processing - distributed processing, tools capable of distributing processing jobs.
+  - Encryption should be used in **primary**, **intermediatory** and **backup** storage (collection and storage pipelines)
 - Internet of Things (IoT)
    - Used for tracking purposes
    - Connected healthcare and lifestyle applications
    - Data collection and sanitisation
-   - Device registration, authentication and authorisation (stored credentials is an issue).
+   - Device registration, authentication and authorisation (**stored credentials** is an issue).
    - Weak encryption protocols
    - Ability to patch devices in the field
 - Mobile
@@ -569,7 +569,7 @@ The following are the notes I jotted down as part of my learning towards CCSK.
   - Data stored in the device should be protected too
   - Certificate pinning and validation within device to overcome connectibity security.
 - Serverless computing
-  - Servers and their configuration is hidden away from customers
+  - Servers and their configuration is hidden away from customers hence serverless
   - Examples: Object storage, cloud load balancers, cloud databases, machine learning, message queues
   - Higher security burden on provider
   - Lack of visibility and network logs
