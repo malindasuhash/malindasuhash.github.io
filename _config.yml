@@ -23,6 +23,8 @@ plainwhite:
     - .NET 
     - Design
     - Security
+  all_categories_2: 
+    - Azure
   condensed_mobile:
     #- home
     - page
