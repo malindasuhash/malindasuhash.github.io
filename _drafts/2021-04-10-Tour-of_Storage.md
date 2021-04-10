@@ -1,6 +1,13 @@
-# Reading list 2021
+---
+layout: post
+title:  "Tour of Storage"
+date:   2021-04-11 21:03:36 +0530
+categories: Infrastructure Cloud
+---
 
-This is a collection of documents (PDFs), links or general things that I find useful. Hope you will enjoy reading them as much as I did.
+# Tour of Storage
+
+In computing, especially in the Cloud, there are number of Storage options for various usecases. The goal of this post to capture understand and capture them for reference.
 
 ### CCSK Study guide
 The Certified Cloud Security Knowledge (CCSK) is an examination offered by the Cloud Security Alliance for anyone who is interested in cloud security. This is a vendor nutral summary of security capabilties that you should expect from a cloud vendor.
